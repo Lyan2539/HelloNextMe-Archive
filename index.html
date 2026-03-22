@@ -83,6 +83,7 @@
         }
     </style>
 </head>
+    
 <body>
 
 <header style="background-color: #1a1a1a; padding: 0 5%; height: 80px; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #cc9933;">
@@ -177,5 +178,24 @@
     &copy; 2026 HELLONEXTME / NO IDENTITY / NO BURDEN / LOGIC ONLY.
 </footer>
 
+    </div> </main>
+
+<div style="position: relative; max-width: 980px; margin: -40px auto 40px auto; display: flex; justify-content: flex-end; gap: 15px; padding-right: 5%; z-index: 10;">
+    <button onclick="scrollGrid(-350)" style="width: 45px; height: 45px; border-radius: 50%; border: 1px solid #d2d2d7; background: rgba(255,255,255,0.8); cursor: pointer; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(10px);">&lt;</button>
+    <button onclick="scrollGrid(350)" style="width: 45px; height: 45px; border-radius: 50%; border: 1px solid #d2d2d7; background: rgba(255,255,255,0.8); cursor: pointer; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(10px);">&gt;</button>
+</div>
+
+<script>
+    function scrollGrid(distance) {
+        const container = document.querySelector('.scroll-container');
+        container.scrollBy({
+            left: distance,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</body>
+</html>
 </body>
 </html>
