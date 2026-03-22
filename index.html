@@ -120,46 +120,49 @@
         </div>
 </section>
 
-<main style="padding: 80px 0; background: #f5f5f7;">
+<main style="padding: 80px 0; background: #f5f5f7; position: relative;">
     <div style="padding: 0 5% 30px 5%; max-width: 1200px; margin: 0 auto;">
         <h2 style="font-size: 2rem; font-weight: 700; color: #1d1d1f; margin: 0;">核心认知模块</h2>
     </div>
 
-    <div class="scroll-container" style="display: flex; overflow-x: auto; padding: 20px 5% 40px 5%; gap: 20px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; ms-overflow-style: none;">
+    <div style="position: relative; width: 100%;">
         
-        <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: white; border-radius: 22px; overflow: hidden; scroll-snap-align: start; box-shadow: 0 8px 24px rgba(0,0,0,0.04); position: relative;">
-            <div style="height: 100%; background: url('./images/card1.jpg') no-repeat center center/cover; display: flex; flex-direction: column; padding: 30px;">
-                <span style="color: #bf4800; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Dimension 01</span>
-                <h3 style="font-size: 1.5rem; margin-top: 10px; color: #1d1d1f;">底层逻辑分析</h3>
+        <button onclick="scrollGrid(-400)" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); width: 45px; height: 45px; border-radius: 50%; border: none; background: rgba(210, 210, 215, 0.7); color: #1d1d1f; font-size: 1.5rem; cursor: pointer; z-index: 20; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(10px); box-shadow: 0 4px 12px rgba(0,0,0,0.1);">&lt;</button>
+
+        <div class="scroll-container" style="display: flex; overflow-x: auto; padding: 20px 5% 40px 5%; gap: 24px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; ms-overflow-style: none;">
+            
+            <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: white; border-radius: 22px; overflow: hidden; scroll-snap-align: start; box-shadow: 0 8px 24px rgba(0,0,0,0.04);">
+                <div style="height: 100%; background: url('./images/card1.jpg') no-repeat center center/cover; display: flex; flex-direction: column; padding: 30px;">
+                    <span style="color: #bf4800; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Dimension 01</span>
+                    <h3 style="font-size: 1.5rem; margin-top: 10px; color: #1d1d1f;">底层逻辑分析</h3>
+                </div>
             </div>
-        </div>
 
-        <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: white; border-radius: 22px; overflow: hidden; scroll-snap-align: start; box-shadow: 0 8px 24px rgba(0,0,0,0.04);">
-            <div style="height: 100%; background: url('./images/card2.jpg') no-repeat center center/cover; display: flex; flex-direction: column; padding: 30px;">
-                <span style="color: #0066cc; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Practice</span>
-                <h3 style="font-size: 1.5rem; margin-top: 10px; color: #1d1d1f;">降维实操指南</h3>
+            <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: white; border-radius: 22px; overflow: hidden; scroll-snap-align: start; box-shadow: 0 8px 24px rgba(0,0,0,0.04);">
+                <div style="height: 100%; background: url('./images/card2.jpg') no-repeat center center/cover; display: flex; flex-direction: column; padding: 30px;">
+                    <span style="color: #0066cc; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Practice</span>
+                    <h3 style="font-size: 1.5rem; margin-top: 10px; color: #1d1d1f;">降维实操指南</h3>
+                </div>
             </div>
-        </div>
 
-        <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: white; border-radius: 22px; overflow: hidden; scroll-snap-align: start; box-shadow: 0 8px 24px rgba(0,0,0,0.04);">
-            <div style="height: 100%; background: url('./images/card3.jpg') no-repeat center center/cover; display: flex; flex-direction: column; padding: 30px;">
-                <span style="color: #0066cc; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">PRACTICE</span>
-                <h3 style="font-size: 1.5rem; margin-top: 10px; color: #1d1d1f;">必读书籍</h3>
+            <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: white; border-radius: 22px; overflow: hidden; scroll-snap-align: start; box-shadow: 0 8px 24px rgba(0,0,0,0.04);">
+                <div style="height: 100%; background: url('./images/card3.jpg') no-repeat center center/cover; display: flex; flex-direction: column; padding: 30px;">
+                    <span style="color: #0066cc; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Practice</span>
+                    <h3 style="font-size: 1.5rem; margin-top: 10px; color: #1d1d1f;">必读书籍</h3>
+                </div>
             </div>
-        </div>
 
-        <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: #000; border-radius: 22px; overflow: hidden; scroll-snap-align: start;">
-            <div style="height: 100%; display: flex; flex-direction: column; justify-content: flex-end; padding: 30px;">
-                <h3 style="font-size: 1.5rem; color: #fff; margin-bottom: 10px;">20+ 视频索引</h3>
-                <p style="color: #86868b; margin: 0;">结构化整理核心论点</p>
+            <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: #1d1d1f; border-radius: 22px; overflow: hidden; scroll-snap-align: start;">
+                <div style="padding: 30px; height: 100%; display: flex; flex-direction: column; justify-content: flex-end;">
+                    <h3 style="font-size: 1.5rem; color: #fff; margin-bottom: 10px;">20+ 视频索引</h3>
+                    <p style="color: #86868b; margin: 0;">结构化整理核心论点</p>
+                </div>
             </div>
-        </div>
 
-    </div>
+            </div>
 
-    <div style="display: flex; justify-content: flex-end; gap: 15px; padding: 0 5%; max-width: 1200px; margin: 20px auto 0 auto;">
-        <button onclick="scrollGrid(-370)" style="width: 45px; height: 45px; border-radius: 50%; border: none; background: #d2d2d7; cursor: pointer; color: #1d1d1f; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; opacity: 0.8;">&lt;</button>
-        <button onclick="scrollGrid(370)" style="width: 45px; height: 45px; border-radius: 50%; border: none; background: #d2d2d7; cursor: pointer; color: #1d1d1f; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; opacity: 0.8;">&gt;</button>
+        <button onclick="scrollGrid(400)" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); width: 45px; height: 45px; border-radius: 50%; border: none; background: rgba(210, 210, 215, 0.7); color: #1d1d1f; font-size: 1.5rem; cursor: pointer; z-index: 20; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(10px); box-shadow: 0 4px 12px rgba(0,0,0,0.1);">&gt;</button>
+
     </div>
 </main>
 
