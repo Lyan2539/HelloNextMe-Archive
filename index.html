@@ -1,16 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>我只等你 - HelloNextMe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELLONEXTME / 认知实验室</title>
+    <style>
+        /* MIT Media Lab 风格基础：极简、高对比 */
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+            --grey: #f0f0f0;
+            --border-width: 2px;
+        }
+
+        body { 
+            margin: 0; 
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        /* 顶部导航：粗线条分隔 */
+        header {
+            padding: 20px 5%;
+            border-bottom: var(--border-width) solid var(--black);
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .logo { font-weight: 900; font-size: 1.8rem; text-decoration: none; color: var(--black); letter-spacing: -1px; }
+        .nav-links a { margin-left: 20px; text-decoration: none; color: var(--black); font-size: 0.9rem; font-weight: bold; }
+
+        /* 主体内容布局 */
+        main { padding: 40px 5%; }
+
+        /* 欢迎语：大字号、左对齐 */
+        .intro {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 60px;
+            max-width: 800px;
+        }
+
+        /* 模块化网格：MIT Media Lab 的核心 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            border-top: var(--border-width) solid var(--black);
+        }
+
+        .grid-item {
+            padding: 30px 20px 60px 0;
+            border-bottom: 1px solid #ddd;
+            transition: all 0.2s;
+        }
+
+        .grid-item:hover { background: var(--grey); }
+
+        .tag {
+            display: inline-block;
+            background: var(--black);
+            color: var(--white);
+            padding: 2px 8px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .grid-item h3 { font-size: 1.5rem; margin: 0 0 10px 0; font-weight: 700; }
+        .grid-item p { font-size: 1rem; color: #444; margin-bottom: 20px; }
+        .grid-item a { color: var(--black); text-decoration: underline; font-weight: bold; }
+
+        /* 页脚 */
+        footer {
+            margin-top: 100px;
+            padding: 40px 5%;
+            border-top: var(--border-width) solid var(--black);
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    </style>
 </head>
-<body style="text-align:center; padding-top:100px; font-family: sans-serif; background-color: #f4f4f4; color: #333;">
-    <h1>你好，下一个我。</h1>
-    <p>生生世世，永不断联。</p>
-    <hr style="width:50%; border: 0.5px solid #ccc;">
-    <p>这是我们这一世修行的实操笔记：</p>
-    <a href="https://www.youtube.com/@Hello-NextMe" style="color: #2c3e50; text-decoration: none; font-weight: bold;">YouTube 频道：我只等你</a>
-    <br><br>
-    <p style="font-size: 0.8em; color: #888;">（以此为信标，等你在轮回中再次对上暗语。）</p>
+<body>
+
+<header>
+    <a href="#" class="logo">HELLONEXTME</a>
+    <div class="nav-links">
+        <a href="https://www.youtube.com/@Hello-NextMe" target="_blank">YOUTUBE</a>
+        <a href="#">ARCHIVE</a>
+    </div>
+</header>
+
+<main>
+    <div class="intro">
+        将复杂的修行逻辑<br>降维至实操维度。
+    </div>
+
+    <div class="grid">
+        <div class="grid-item">
+            <span class="tag">Cognition</span>
+            <h3>底层逻辑分析</h3>
+            <p>打破感知偏差，通过严谨的代码化思维重构对“无我”与“因缘”的理解。</p>
+            <a href="#">进入专题 →</a>
+        </div>
+
+        <div class="grid-item">
+            <span class="tag">Practice</span>
+            <h3>降维实操指南</h3>
+            <p>不谈玄说妙。将导师的复杂理论转化为每日可量化的行为修正协议。</p>
+            <a href="#">查看指南 →</a>
+        </div>
+
+        <div class="grid-item">
+            <span class="tag">Video List</span>
+            <h3>视频存档索引</h3>
+            <p>已发布的 20+ 视频结构化整理，方便跨时空检索核心论点。</p>
+            <a href="#">开始搜索 →</a>
+        </div>
+
+        <div class="grid-item">
+            <span class="tag">Protocol</span>
+            <h3>致未来的我</h3>
+            <p>基于 10 宫土星的稳固传承，为下一次觉醒预设的逻辑触发装置。</p>
+            <a href="#">读取协议 →</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    &copy; 2026 HELLONEXTME / NO IDENTITY / NO BURDEN / LOGIC ONLY.
+</footer>
+
 </body>
 </html>
