@@ -120,14 +120,14 @@
         </div>
 </section>
 
-<main style="background-color: #f5f5f7; padding: 80px 0;">
-    <div style="padding: 0 5% 30px 5%; max-width: 980px; margin: 0 auto;">
-        <h2 style="font-size: 1.8rem; font-weight: 700; color: #1d1d1f;">核心认知模块</h2>
+<main style="padding: 80px 0; background: #f5f5f7;">
+    <div style="padding: 0 5% 30px 5%; max-width: 1200px; margin: 0 auto;">
+        <h2 style="font-size: 2rem; font-weight: 700; color: #1d1d1f; margin: 0;">核心认知模块</h2>
     </div>
 
-    <div class="scroll-container" style="display: flex; overflow-x: auto; padding: 20px 5%; gap: 20px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+    <div class="scroll-container" style="display: flex; overflow-x: auto; padding: 20px 5% 40px 5%; gap: 20px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; ms-overflow-style: none;">
         
-        <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: white; border-radius: 22px; overflow: hidden; scroll-snap-align: start; box-shadow: 0 8px 24px rgba(0,0,0,0.04); transition: transform 0.3s ease;">
+        <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: white; border-radius: 22px; overflow: hidden; scroll-snap-align: start; box-shadow: 0 8px 24px rgba(0,0,0,0.04); position: relative;">
             <div style="height: 100%; background: url('./images/card1.jpg') no-repeat center center/cover; display: flex; flex-direction: column; padding: 30px;">
                 <span style="color: #bf4800; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Dimension 01</span>
                 <h3 style="font-size: 1.5rem; margin-top: 10px; color: #1d1d1f;">底层逻辑分析</h3>
@@ -141,61 +141,50 @@
             </div>
         </div>
 
-          <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: white; border-radius: 22px; overflow: hidden; scroll-snap-align: start; box-shadow: 0 8px 24px rgba(0,0,0,0.04);">
-            <div style="height: 100%; background: url('./images/card2.jpg') no-repeat center center/cover; display: flex; flex-direction: column; padding: 30px;">
-                <span style="color: #0066cc; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Practice</span>
+        <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: white; border-radius: 22px; overflow: hidden; scroll-snap-align: start; box-shadow: 0 8px 24px rgba(0,0,0,0.04);">
+            <div style="height: 100%; background: url('./images/card3.jpg') no-repeat center center/cover; display: flex; flex-direction: column; padding: 30px;">
+                <span style="color: #0066cc; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">PRACTICE</span>
                 <h3 style="font-size: 1.5rem; margin-top: 10px; color: #1d1d1f;">必读书籍</h3>
             </div>
         </div>
 
-          <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: white; border-radius: 22px; overflow: hidden; scroll-snap-align: start; box-shadow: 0 8px 24px rgba(0,0,0,0.04);">
-            <div style="height: 100%; background: url('./images/card2.jpg') no-repeat center center/cover; display: flex; flex-direction: column; padding: 30px;">
-                <span style="color: #0066cc; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Practice</span>
-                <h3 style="font-size: 1.5rem; margin-top: 10px; color: #1d1d1f;">POST</h3>
-            </div>
-        </div>
-
-        <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: #000; border-radius: 22px; overflow: hidden; scroll-snap-align: start; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
-            <div style="height: 100%; background: url('./images/card3.jpg') no-repeat center center/cover; display: flex; flex-direction: column; justify-content: flex-end; padding: 30px;">
+        <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: #000; border-radius: 22px; overflow: hidden; scroll-snap-align: start;">
+            <div style="height: 100%; display: flex; flex-direction: column; justify-content: flex-end; padding: 30px;">
                 <h3 style="font-size: 1.5rem; color: #fff; margin-bottom: 10px;">20+ 视频索引</h3>
                 <p style="color: #86868b; margin: 0;">结构化整理核心论点</p>
             </div>
         </div>
 
     </div>
+
+    <div style="display: flex; justify-content: flex-end; gap: 15px; padding: 0 5%; max-width: 1200px; margin: 20px auto 0 auto;">
+        <button onclick="scrollGrid(-370)" style="width: 45px; height: 45px; border-radius: 50%; border: none; background: #d2d2d7; cursor: pointer; color: #1d1d1f; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; opacity: 0.8;">&lt;</button>
+        <button onclick="scrollGrid(370)" style="width: 45px; height: 45px; border-radius: 50%; border: none; background: #d2d2d7; cursor: pointer; color: #1d1d1f; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; opacity: 0.8;">&gt;</button>
+    </div>
 </main>
 
-<style>
-    /* 隐藏滚动条 */
-    .scroll-container::-webkit-scrollbar { display: none; }
-    .scroll-container { -ms-overflow-style: none; scrollbar-width: none; }
-    
-    /* 悬停微动效 */
-    .apple-card:hover { transform: scale(1.01); }
-</style>
-
-<footer>
+<footer style="padding: 60px 5%; text-align: center; color: #86868b; font-size: 0.8rem; background: #f5f5f7;">
     &copy; 2026 HELLONEXTME / NO IDENTITY / NO BURDEN / LOGIC ONLY.
 </footer>
-
-    </div> </main>
-
-<div style="position: relative; max-width: 980px; margin: -40px auto 40px auto; display: flex; justify-content: flex-end; gap: 15px; padding-right: 5%; z-index: 10;">
-    <button onclick="scrollGrid(-350)" style="width: 45px; height: 45px; border-radius: 50%; border: 1px solid #d2d2d7; background: rgba(255,255,255,0.8); cursor: pointer; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(10px);">&lt;</button>
-    <button onclick="scrollGrid(350)" style="width: 45px; height: 45px; border-radius: 50%; border: 1px solid #d2d2d7; background: rgba(255,255,255,0.8); cursor: pointer; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(10px);">&gt;</button>
-</div>
 
 <script>
     function scrollGrid(distance) {
         const container = document.querySelector('.scroll-container');
-        container.scrollBy({
-            left: distance,
-            behavior: 'smooth'
-        });
+        if (container) {
+            container.scrollBy({
+                left: distance,
+                behavior: 'smooth'
+            });
+        } else {
+            console.error("找不到滚动容器");
+        }
     }
 </script>
 
-</body>
-</html>
+<style>
+    .scroll-container::-webkit-scrollbar { display: none; }
+    .apple-card:hover { transform: scale(1.02); transition: 0.3s ease; }
+</style>
+
 </body>
 </html>
