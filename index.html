@@ -102,41 +102,62 @@
     </nav>
 </header>
 
-<main>
-    <div class="intro">
-        将复杂的修行逻辑<br>降维至实操维度。
+<section style="background-color: #fff; padding: 120px 5% 60px 5%; text-align: left;">
+    <div class="intro" style="max-width: 980px; margin: 0 auto;">
+        <h1 style="font-size: clamp(3rem, 8vw, 5rem); font-weight: 700; line-height: 1.05; letter-spacing: -0.015em; color: #1d1d1f; margin: 0;">
+            将复杂的修行逻辑<br>
+            <span style="color: #86868b;">降维至实操维度。</span>
+        </h1>
+        <p style="font-size: 1.5rem; color: #86868b; margin-top: 40px; font-weight: 500; max-width: 600px;">
+            为生生世世的觉醒留下逻辑信标。
+        </p>
+    </div>
+</section>
+
+<section style="width: 100%; padding: 0 5%; box-sizing: border-box; margin-bottom: 80px;">
+    <div style="width: 100%; height: 60vh; background: #f5f5f7 url('./images/hero-bg.jpg') no-repeat center center/cover; border-radius: 28px; overflow: hidden;">
+        </div>
+</section>
+
+<main style="background-color: #f5f5f7; padding: 80px 0;">
+    <div style="padding: 0 5% 30px 5%; max-width: 980px; margin: 0 auto;">
+        <h2 style="font-size: 1.8rem; font-weight: 700; color: #1d1d1f;">核心认知模块</h2>
     </div>
 
-    <div class="grid">
-        <div class="grid-item">
-            <span class="tag">Cognition</span>
-            <h3>底层逻辑分析</h3>
-            <p>打破感知偏差，通过严谨的代码化思维重构对“无我”与“因缘”的理解。</p>
-            <a href="#">进入专题 →</a>
+    <div class="scroll-container" style="display: flex; overflow-x: auto; padding: 20px 5%; gap: 20px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+        
+        <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: white; border-radius: 22px; overflow: hidden; scroll-snap-align: start; box-shadow: 0 8px 24px rgba(0,0,0,0.04); transition: transform 0.3s ease;">
+            <div style="height: 100%; background: url('./images/card1.jpg') no-repeat center center/cover; display: flex; flex-direction: column; padding: 30px;">
+                <span style="color: #bf4800; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Dimension 01</span>
+                <h3 style="font-size: 1.5rem; margin-top: 10px; color: #1d1d1f;">底层逻辑分析</h3>
+            </div>
         </div>
 
-        <div class="grid-item">
-            <span class="tag">Practice</span>
-            <h3>降维实操指南</h3>
-            <p>不谈玄说妙。将导师的复杂理论转化为每日可量化的行为修正协议。</p>
-            <a href="#">查看指南 →</a>
+        <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: white; border-radius: 22px; overflow: hidden; scroll-snap-align: start; box-shadow: 0 8px 24px rgba(0,0,0,0.04);">
+            <div style="height: 100%; background: url('./images/card2.jpg') no-repeat center center/cover; display: flex; flex-direction: column; padding: 30px;">
+                <span style="color: #0066cc; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">Practice</span>
+                <h3 style="font-size: 1.5rem; margin-top: 10px; color: #1d1d1f;">降维实操指南</h3>
+            </div>
         </div>
 
-        <div class="grid-item">
-            <span class="tag">Video List</span>
-            <h3>视频存档索引</h3>
-            <p>已发布的 20+ 视频结构化整理，方便跨时空检索核心论点。</p>
-            <a href="#">开始搜索 →</a>
+        <div class="apple-card" style="flex: 0 0 350px; height: 480px; background: #000; border-radius: 22px; overflow: hidden; scroll-snap-align: start; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
+            <div style="height: 100%; background: url('./images/card3.jpg') no-repeat center center/cover; display: flex; flex-direction: column; justify-content: flex-end; padding: 30px;">
+                <h3 style="font-size: 1.5rem; color: #fff; margin-bottom: 10px;">20+ 视频索引</h3>
+                <p style="color: #86868b; margin: 0;">结构化整理核心论点</p>
+            </div>
         </div>
 
-        <div class="grid-item">
-            <span class="tag">Protocol</span>
-            <h3>致未来的我</h3>
-            <p>基于 10 宫土星的稳固传承，为下一次觉醒预设的逻辑触发装置。</p>
-            <a href="#">读取协议 →</a>
-        </div>
     </div>
 </main>
+
+<style>
+    /* 隐藏滚动条 */
+    .scroll-container::-webkit-scrollbar { display: none; }
+    .scroll-container { -ms-overflow-style: none; scrollbar-width: none; }
+    
+    /* 悬停微动效 */
+    .apple-card:hover { transform: scale(1.01); }
+</style>
 
 <footer>
     &copy; 2026 HELLONEXTME / NO IDENTITY / NO BURDEN / LOGIC ONLY.
